@@ -32,7 +32,7 @@ namespace ChM1
             {
                 x0.Add(x0[i - 1] + h);
                 y0.Add((y0[i - 1] + h * Math.Sqrt(1 - y0[i - 1] * y0[i - 1] + h * h)) / (1 + h * h));
-                y1.Add((y0[i - 1] - h * Math.Sqrt(1 - y0[i - 1] * y0[i - 1] + h * h)) / (1 + h * h));
+                y1.Add((y1[i - 1] - h * Math.Sqrt(1 - y1[i - 1] * y1[i - 1] + h * h)) / (1 + h * h));
                 result.Add(new MyTable(x0[i - 1], y0[i - 1], y1[i - 1]));
             }
 
@@ -108,7 +108,7 @@ namespace ChM1
             {
                 x0.Add(x0[i - 1] + h);
                 y0.Add((y0[i - 1] + h * Math.Sqrt(1 - y0[i - 1] * y0[i - 1] + h * h)) / (1 + h * h));
-                y1.Add((y0[i - 1] - h * Math.Sqrt(1 - y0[i - 1] * y0[i - 1] + h * h)) / (1 + h * h));
+                y1.Add((y1[i - 1] - h * Math.Sqrt(1 - y1[i - 1] * y1[i - 1] + h * h)) / (1 + h * h));
                 result.Add(new MyTable(x0[i - 1], y0[i - 1], y1[i - 1]));
             }
 
